@@ -1,5 +1,7 @@
 # Start from the latest golang base image
 FROM golang:latest
+# Set an image name
+LABEL image="teltonika2tak-cot"
 
 # Add Maintainer Info
 LABEL maintainer="Rosen Velikov <rosen.st.velikov@gmail.com>"

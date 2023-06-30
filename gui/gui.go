@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"wintak-gw/parser"
+	"teltonika2tak-cot/parser"
 
 	"github.com/gotk3/gotk3/glib"
 	"github.com/gotk3/gotk3/gtk"

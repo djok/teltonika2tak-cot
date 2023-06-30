@@ -1,4 +1,4 @@
-module wintak-gw
+module teltonika2tak-cot
 
 go 1.19
 

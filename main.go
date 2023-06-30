@@ -7,8 +7,8 @@ import (
 	"os/signal"
 
 	// "wintak-gw/gui"
-	"wintak-gw/parser"
-	"wintak-gw/server"
+	"teltonika2tak-cot/parser"
+	"teltonika2tak-cot/server"
 )
 
 type Config struct {
