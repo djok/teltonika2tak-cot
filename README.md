@@ -34,4 +34,4 @@ Contributions are welcome! Please read our Contributing guidelines for details.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the Apache License Version 2.0, January 2004 - see the LICENSE file for details.
