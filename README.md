@@ -1,6 +1,6 @@
 # teltonika2tak-cot
 
-# Teltonika GPS Tracker to WINTAK Server
+# Teltonika GPS Tracker to TAK Server
 
 This repository contains a server application built in Golang to receive and process data from Teltonika GPS trackers (for example, model TMT250), and send it to a TAK server in real time. The application uses the [Teltonika parser](https://github.com/filipkroca/teltonikaparser) for processing GPS tracker data and converts it to a format compatible with the Cursor on Target (CoT) standard for display on a TAK server.
 
