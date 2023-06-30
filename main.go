@@ -45,10 +45,10 @@ func main() {
 
 	// Initialize Teltonika parser
 	teltonikaParser := parser.NewTeltonikaParser()
-	log.Println("3")
+
 	// Initialize CoT converter
 	cotConverter := parser.NewCotConverter()
-	log.Println("4")
+
 	// Initialize GUI
 	// gui := gui.NewGui()
 
@@ -58,10 +58,11 @@ func main() {
 		teltonikaServer.ServeTCP(addr)
 		log.Println("Running")
 	}()
-	log.Println("1")
+
 	// Start data conversion and transmission process
 	go func() {
 		for data := range teltonikaServer.DataChan {
+			log.Println(".")
 			parsedData := teltonikaParser.Parse(data)
 			cotData := cotConverter.Convert(parsedData)
 			if ProcessWinTak {
@@ -70,7 +71,6 @@ func main() {
 			// gui.Update(parsedData)
 		}
 	}()
-	log.Println("2")
 
 	// Wait until Ctrl+C is pressed
 	c := make(chan os.Signal, 1)
