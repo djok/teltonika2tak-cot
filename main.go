@@ -55,7 +55,7 @@ func main() {
 	addr := ":7908"
 	// Start listening for incoming connections
 	go func() {
-		teltonikaServer.ServeTCP(addr)
+		teltonikaServer.ServeUDP(addr)
 		log.Println("Running")
 	}()
 
