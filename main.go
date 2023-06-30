@@ -64,6 +64,7 @@ func main() {
 		for data := range teltonikaServer.DataChan {
 			log.Println(".")
 			parsedData := teltonikaParser.Parse(data)
+			log.Panicln(parsedData)
 			cotData := cotConverter.Convert(parsedData)
 			if ProcessWinTak {
 				wintakServer.Send(cotData)
