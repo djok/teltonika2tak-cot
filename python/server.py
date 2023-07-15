@@ -62,18 +62,18 @@ class ThreadedServer(Thread):
 
                 if self.debug == 1:
                     print('IMEI:', imei)
-                print ("Match:", re.match('(^[0-9]+$)', imei[4:]), " & ", re.match('(^000F)', imei[:4]))
-                if bool(re.match('(^[0-9]+$)', imei[4:]) and re.match('(^000F)', imei[:4])):
-                    response = '01'
-                    client.send(response.encode('utf-8'))
-                    buffer = b''
-                else:
-                    response = '00'
-                    client.send(response.encode('utf-8'))
-                    if self.debug == 1 or self.debug == 2:
-                        print("CLIENT IMEI Corrupted")
-                        print('CLIENT Disconnected')
-                    return
+                # print ("Match:", re.match('(^[0-9]+$)', imei[4:]), " & ", re.match('(^000F)', imei[:4]))
+                # if bool(re.match('(^[0-9]+$)', imei[4:]) and re.match('(^000F)', imei[:4])):
+                #     response = '01'
+                #     client.send(response.encode('utf-8'))
+                #     buffer = b''
+                # else:
+                #     response = '00'
+                #     client.send(response.encode('utf-8'))
+                #     if self.debug == 1 or self.debug == 2:
+                #         print("CLIENT IMEI Corrupted")
+                #         print('CLIENT Disconnected')
+                #     return
             else:
                 if self.debug == 1 or self.debug == 2:
                     print('CLIENT Disconnected')
