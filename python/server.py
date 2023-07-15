@@ -82,7 +82,7 @@ class ThreadedServer(Thread):
                 if self.debug == 1 or self.debug == 2:
                     print('CLIENT Disconnected')
                 return
-
+            print ("WHILE")
             while True:
                 data = client.recv(size).replace(b'\n', b'')
                 if not data:
