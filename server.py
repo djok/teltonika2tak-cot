@@ -16,7 +16,7 @@ from twos_complement import twos_complement
 ### >>><<< ###
 # Intialization
 SERVER = "0.0.0.0"
-PORT = 9797
+PORT = 7809
 
 ### >>><<< ###
 # Core
