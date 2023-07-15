@@ -49,18 +49,13 @@ func parseConfig() *config.Config {
 	flag.Bool(config.Verbose, config.DefaultVerbose, "Set log level to verbose")
 	flag.String(config.AllowedIMEIs, config.DefaultAllowedIMEIs, "IMEI identifiers needs to be processed. Separated by comma. Example: 123456789012345,123456789012345,123456789012345")
 	// InfluxDB client configs
-	flag.String(config.InfluxConfigUrl, config.DefaultInfluxDbUrl, "URL of InfluxDB server")
-	flag.String(config.InfluxConfigUsername, config.DefaultInfluxDbUserName, "InfluxDB username")
-	flag.String(config.InfluxConfigPassword, config.DefaultInfluxDbPassword, "InfluxDB password")
-	flag.String(config.InfluxConfigDatabase, config.DefaultInfluxDbDatabaseName, "InfluxDB database name")
-	flag.String(config.InfluxConfigMeasurement, config.DefaultInfluxDbMeasurementName, "Name of the Influxdb measurement")
 	// Teltonika server configs
 	flag.String(config.TeltonikaListeningIp, config.DefaultTeltonikaListeningIP, "Teltonika server listening IP address (IPv4 or IPv6)")
 	flag.Int(config.TeltonikaListeningPort, config.DefaultTeltonikaListeningPort, "Teltonika server listening UDP port")
 	// Metrics server configs
 	flag.String(config.MetricsListeningIp, config.DefaultMetricsListeningIP, "Metrics server listening IP address (IPv4 or IPv6)")
-	flag.Int(config.MetricsListeningPort, config.DefaultMetricsListeningPort, "Metrics server listening port")
-	flag.String(config.MetricsTeltonikaMetricsFileName, config.DefaultMetricsTeltonikaMetricsFileName, "File where metrics are written")
+	// flag.Int(config.MetricsListeningPort, config.DefaultMetricsListeningPort, "Metrics server listening port")
+	// flag.String(config.MetricsTeltonikaMetricsFileName, config.DefaultMetricsTeltonikaMetricsFileName, "File where metrics are written")
 
 	pflag.CommandLine.AddGoFlagSet(flag.CommandLine)
 	pflag.Parse()
