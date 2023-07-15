@@ -33,7 +33,7 @@ const (
 	DefaultInfluxDbMeasurementName         = "gps"
 	DefaultInfluxDbUserName                = AppName
 	DefaultInfluxDbPassword                = "123"
-	DefaultAllowedIMEIs                    = "350424063817363" // list, separated by comma
+	DefaultAllowedIMEIs                    = "352016701836447" // list, separated by comma
 	DefaultTeltonikaListeningIP            = "0.0.0.0"
 	DefaultTeltonikaListeningPort          = 7809
 	DefaultMetricsListeningIP              = "0.0.0.0"
