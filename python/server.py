@@ -62,9 +62,9 @@ class ThreadedServer(Thread):
 
                 if self.debug == 1:
                     print('IMEI:', imei)
-                    response = '01'
-                    client.send(response.encode('utf-8'))
-                    buffer = b''
+                response = '01'
+                client.send(response.encode('utf-8'))
+                # buffer = b''
                 
                 # print ("Match:", re.match('(^[0-9]+$)', imei[4:]), " & ", re.match('(^000F)', imei[:4]))
                 # if bool(re.match('(^[0-9]+$)', imei[4:]) and re.match('(^000F)', imei[:4])):
